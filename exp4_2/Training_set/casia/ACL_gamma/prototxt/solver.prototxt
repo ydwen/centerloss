@@ -1,0 +1,19 @@
+net: "resnet20.prototxt"
+iter_size: 1
+base_lr: 0.1
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue: 16000
+stepvalue: 24000
+stepvalue: 28000
+max_iter: 28000
+
+average_loss:100
+display: 100
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "models/resnet20"
+
+solver_mode: GPU
+layer_wise_reduce: false 

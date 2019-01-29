@@ -1,0 +1,19 @@
+net: "resnet64.prototxt"
+iter_size: 1
+base_lr: 0.1
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue: 25000
+stepvalue: 38000
+stepvalue: 45000
+max_iter: 45000
+
+average_loss:100
+display: 100
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 1000
+snapshot_prefix: "models/resnet64"
+
+solver_mode: GPU
+layer_wise_reduce: false 
